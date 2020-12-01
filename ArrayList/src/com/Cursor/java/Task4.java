@@ -59,6 +59,23 @@ public class Task4 {
         for (String thirdMassive : anotherNewConvert) {
             System.out.println(thirdMassive);
         }
+        System.out.println("\nTask 10:");
+        HashSet<String> anotherJobs = new HashSet<>();
+        anotherJobs.add("Chemical");
+        anotherJobs.add("Writer");
+        anotherJobs.add("Nurse");
+        anotherJobs.add("Architecture");
 
+        HashSet<String> occupations = new HashSet<>();
+        for (String element : jobs) {
+            System.out.println(anotherJobs.contains(element) ? "Yes" : "No");
+            System.out.println(occupations);
+        }
+        System.out.println("\nTask 11:");
+        System.out.println("Compared and retained: " + jobs.retainAll(anotherJobs));
+
+        System.out.println("\nTask 12:");
+        System.out.println("Removed HashSet: " + jobs.removeAll(jobs));
+        
     }
 }
